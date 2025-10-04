@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - Manage Courses</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+</head>
+<body>
+  <div class="admin-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">ProgHub</h2>
+      <ul class="menu">
+        <li><a href="#"><i class="ri-book-2-line"></i> Course</a></li>
+        <li><a href="#"><i class="ri-user-line"></i> Learner</a></li>
+        <li><a href="#"><i class="ri-team-line"></i> Faculty</a></li>
+        <li><a href="#"><i class="ri-pages-line"></i> Static Pages</a></li>
+        <li><a href="#"><i class="ri-mail-line"></i> Enquiries</a></li>
+        <li><a href="#"><i class="ri-settings-3-line"></i> Update Site Details</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Dashboard / Category / List</h1>
+        <div class="admin-info">Super Admin ▾</div>
+      </header>
+
+      <section class="content">
+        <div class="course-header">
+          <h2>Course</h2>
+          <button class="btn add-btn"><i class="ri-add-line"></i> Add</button>
+        </div>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Enter Course Name" />
+          <button class="btn search-btn">Search</button>
+        </div>
+
+        <table class="course-table">
+          <thead>
+            <tr>
+              <th>Sr. No</th>
+              <th>Name</th>
+              <th>Duration</th>
+              <th>Fee</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Learn PHP Beginner To Professional <a href="#" class="chapter-link">📘 Chapters</a></td>
+              <td>3 months</td>
+              <td>₹ 8000</td>
+              <td>
+                <button class="btn edit-btn"><i class="ri-edit-line"></i> Edit</button>
+                <button class="btn delete-btn"><i class="ri-delete-bin-line"></i> Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Learn ReactJS Beginner <a href="#" class="chapter-link">📘 Chapters</a></td>
+              <td>3 months</td>
+              <td>₹ 8000</td>
+              <td>
+                <button class="btn edit-btn"><i class="ri-edit-line"></i> Edit</button>
+                <button class="btn delete-btn"><i class="ri-delete-bin-line"></i> Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
